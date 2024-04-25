@@ -1,0 +1,7 @@
+{
+  "name": "music-hunt-tabs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

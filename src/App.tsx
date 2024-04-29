@@ -55,6 +55,7 @@ setupIonicReact();
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
+    <IonTabs>
         <IonRouterOutlet>
           <Route exact path="/intro">
             <Intro />
@@ -81,6 +82,21 @@ const App: React.FC = () => (
             <Preferences />
           </Route>
         </IonRouterOutlet>
+        <IonTabBar slot="bottom">
+          <IonTabButton tab="mybands" href="/mybands">
+            <IonIcon aria-hidden="true" icon={triangle} />
+            <IonLabel>MyBands</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="search" href="/search">
+            <IonIcon aria-hidden="true" icon={ellipse} />
+            <IonLabel>Search</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="profile" href="/profile">
+            <IonIcon aria-hidden="true" icon={square} />
+            <IonLabel>Profile</IonLabel>
+          </IonTabButton>
+        </IonTabBar>
+      </IonTabs>
     </IonReactRouter>
   </IonApp>
 );
